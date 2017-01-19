@@ -7,7 +7,7 @@ For the sake of the example, we have two accounts:
 * Account A: Our account
 * Account B: Another AWS account
 
-In this example, we will consider the bucket owner's (Account A) full access to any file uploaded to the bucket as an requirement. To meet that requirement, we add [a condition to the bucket policy](cfn-template.yaml#L31) that requires Account B users to use the [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) `bucket-owner-full-control` for any PUT.
+In this example, we will consider the bucket owner's (Account A) full access to any file uploaded to the bucket as a requirement. To meet that requirement, we add [a condition to the bucket policy](cfn-template.yaml#L31) that requires Account B users to use the [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) `bucket-owner-full-control` for any PUT.
 
 To create this CloudFormation stack, use the [cfn-template.yaml template](cfn-template.yaml).
 
