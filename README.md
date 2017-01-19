@@ -11,7 +11,7 @@ In this example, we will consider the bucket owner's (Account A) full access to 
 
 To create this CloudFormation stack, use the [cfn-template.yaml template](cfn-template.yaml).
 
-Then, for an Account B user to upload a file, they'll need to specify the canned ACL. E.g.:
+Then, for an Account B user to upload a file, they'll need to specify the canned ACL. E.g. using [`aws-cli`'s `cp` command](https://docs.aws.amazon.com/cli/latest/reference/s3/cp.html):
 
     aws s3 cp foo.txt s3://proj1-bucket-wkdngena98ww/foo.txt --acl bucket-owner-full-control
 
